@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Coffee Finder</string>
+    <string name="coffee_rating">%1$.1f/5</string>
+</resources>
