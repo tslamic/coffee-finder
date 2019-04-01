@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D1FFF422250B98600025B73 /* finder.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FFF412250B98600025B73 /* finder.grpc.swift */; };
+		8D1FFF4622512A0D00025B73 /* CoffeeShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FFF4522512A0D00025B73 /* CoffeeShopViewController.swift */; };
+		8D631C40224BBC4100E01F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D631C3F224BBC4100E01F1F /* AppDelegate.swift */; };
+		8D631C45224BBC4100E01F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D631C43224BBC4100E01F1F /* Main.storyboard */; };
+		8D631C47224BBC4200E01F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D631C46224BBC4200E01F1F /* Assets.xcassets */; };
+		8D631C54224BC5AD00E01F1F /* CoffeeFinderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D631C53224BC5AD00E01F1F /* CoffeeFinderRepository.swift */; };
+		8DA5CDEE224BD6F5008AD924 /* finder.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5CDED224BD6F5008AD924 /* finder.pb.swift */; };
+		98EDDF534A991D2290516A20 /* Pods_coffeefinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227E6013816A6D6FCDD3E3DC /* Pods_coffeefinder.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14ACCED184D6575CDB2B2C90 /* Pods-coffeefinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coffeefinder.release.xcconfig"; path = "Target Support Files/Pods-coffeefinder/Pods-coffeefinder.release.xcconfig"; sourceTree = "<group>"; };
+		227E6013816A6D6FCDD3E3DC /* Pods_coffeefinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coffeefinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F6D186CB599ACAF12E32654 /* Pods-coffeefinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coffeefinder.debug.xcconfig"; path = "Target Support Files/Pods-coffeefinder/Pods-coffeefinder.debug.xcconfig"; sourceTree = "<group>"; };
+		8D1FFF412250B98600025B73 /* finder.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = finder.grpc.swift; sourceTree = "<group>"; };
+		8D1FFF4522512A0D00025B73 /* CoffeeShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopViewController.swift; sourceTree = "<group>"; };
+		8D631C3C224BBC4100E01F1F /* coffeefinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coffeefinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D631C3F224BBC4100E01F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D631C44224BBC4100E01F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D631C46224BBC4200E01F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D631C4B224BBC4200E01F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D631C53224BC5AD00E01F1F /* CoffeeFinderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeFinderRepository.swift; sourceTree = "<group>"; };
+		8DA5CDED224BD6F5008AD924 /* finder.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = finder.pb.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D631C39224BBC4100E01F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EDDF534A991D2290516A20 /* Pods_coffeefinder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DAAE9D07AE7D6985CD5F992 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				227E6013816A6D6FCDD3E3DC /* Pods_coffeefinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		666177A36A9942BAA106C43A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F6D186CB599ACAF12E32654 /* Pods-coffeefinder.debug.xcconfig */,
+				14ACCED184D6575CDB2B2C90 /* Pods-coffeefinder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D631C33224BBC4100E01F1F = {
+			isa = PBXGroup;
+			children = (
+				8D631C3E224BBC4100E01F1F /* coffeefinder */,
+				8D631C3D224BBC4100E01F1F /* Products */,
+				666177A36A9942BAA106C43A /* Pods */,
+				4DAAE9D07AE7D6985CD5F992 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8D631C3D224BBC4100E01F1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D631C3C224BBC4100E01F1F /* coffeefinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D631C3E224BBC4100E01F1F /* coffeefinder */ = {
+			isa = PBXGroup;
+			children = (
+				8D1FFF412250B98600025B73 /* finder.grpc.swift */,
+				8DA5CDED224BD6F5008AD924 /* finder.pb.swift */,
+				8D631C3F224BBC4100E01F1F /* AppDelegate.swift */,
+				8D631C43224BBC4100E01F1F /* Main.storyboard */,
+				8D631C46224BBC4200E01F1F /* Assets.xcassets */,
+				8D631C4B224BBC4200E01F1F /* Info.plist */,
+				8D631C53224BC5AD00E01F1F /* CoffeeFinderRepository.swift */,
+				8D1FFF4522512A0D00025B73 /* CoffeeShopViewController.swift */,
+			);
+			path = coffeefinder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D631C3B224BBC4100E01F1F /* coffeefinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D631C4E224BBC4200E01F1F /* Build configuration list for PBXNativeTarget "coffeefinder" */;
+			buildPhases = (
+				46626C333D443C4687D087C8 /* [CP] Check Pods Manifest.lock */,
+				8D631C38224BBC4100E01F1F /* Sources */,
+				8D631C39224BBC4100E01F1F /* Frameworks */,
+				8D631C3A224BBC4100E01F1F /* Resources */,
+				3AC950D2460023910FC38659 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = coffeefinder;
+			productName = coffeefinder;
+			productReference = 8D631C3C224BBC4100E01F1F /* coffeefinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D631C34224BBC4100E01F1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tadej Slamic";
+				TargetAttributes = {
+					8D631C3B224BBC4100E01F1F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 8D631C37224BBC4100E01F1F /* Build configuration list for PBXProject "coffeefinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D631C33224BBC4100E01F1F;
+			productRefGroup = 8D631C3D224BBC4100E01F1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D631C3B224BBC4100E01F1F /* coffeefinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D631C3A224BBC4100E01F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D631C47224BBC4200E01F1F /* Assets.xcassets in Resources */,
+				8D631C45224BBC4100E01F1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AC950D2460023910FC38659 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coffeefinder/Pods-coffeefinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGRPC/SwiftGRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coffeefinder/Pods-coffeefinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46626C333D443C4687D087C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coffeefinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D631C38224BBC4100E01F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1FFF4622512A0D00025B73 /* CoffeeShopViewController.swift in Sources */,
+				8D631C54224BC5AD00E01F1F /* CoffeeFinderRepository.swift in Sources */,
+				8D631C40224BBC4100E01F1F /* AppDelegate.swift in Sources */,
+				8D1FFF422250B98600025B73 /* finder.grpc.swift in Sources */,
+				8DA5CDEE224BD6F5008AD924 /* finder.pb.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D631C43224BBC4100E01F1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D631C44224BBC4100E01F1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D631C4C224BBC4200E01F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D631C4D224BBC4200E01F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D631C4F224BBC4200E01F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F6D186CB599ACAF12E32654 /* Pods-coffeefinder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = coffeefinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tadej.me.coffeefinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D631C50224BBC4200E01F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14ACCED184D6575CDB2B2C90 /* Pods-coffeefinder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = coffeefinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tadej.me.coffeefinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D631C37224BBC4100E01F1F /* Build configuration list for PBXProject "coffeefinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D631C4C224BBC4200E01F1F /* Debug */,
+				8D631C4D224BBC4200E01F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D631C4E224BBC4200E01F1F /* Build configuration list for PBXNativeTarget "coffeefinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D631C4F224BBC4200E01F1F /* Debug */,
+				8D631C50224BBC4200E01F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D631C34224BBC4100E01F1F /* Project object */;
+}

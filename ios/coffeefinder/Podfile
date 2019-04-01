@@ -1,0 +1,7 @@
+target 'coffeefinder' do
+  use_frameworks!
+  pod 'SwiftGRPC'
+  pod 'SwiftProtobuf'
+end
+
+
