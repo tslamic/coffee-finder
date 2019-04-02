@@ -4,6 +4,9 @@ Coffee Shop Finder uses [Places API](https://developers.google.com/places/web-se
 
 The auto-generated gRPC stubs are already provided. In case you want to recreate them, you need a [Protobuf compiler](https://github.com/protocolbuffers/protobuf) along with the [Go](https://github.com/golang/protobuf) and [Swift](https://github.com/apple/swift-protobuf) plugins, and compile the `finder.proto` file. The Android app only requires a link to the [proto file](/android/app/src/main/proto) and Gradle will take care of the rest. 
 
+The server requires a Google Maps Places API Key, which you can create by visiting [Google Developer Console](https://console.developers.google.com/apis/dashboard).
+Run the server by executing `go run main.go -key PLACES_API_KEY` 
+
 ## License
 
 Copyright (c) 2019 Tadej Slamic. All rights reserved.
