@@ -29,7 +29,7 @@ func (f *finder) CoffeeShops(p *Point, s CoffeeService_CoffeeShopsServer) error 
 		OpenNow:  true,
 		Type:     maps.PlaceTypeCafe,
 	}
-	ctx, cancel := context.WithTimeout(context.Background(), timeout)
+	ctx, cancel := context.WithTimeout(s.Context(), timeout)
 	defer cancel()
 	resp, err := f.client.NearbySearch(ctx, r)
 	if err != nil {
@@ -40,21 +40,26 @@ func (f *finder) CoffeeShops(p *Point, s CoffeeService_CoffeeShopsServer) error 
 		return results[i].Rating > results[j].Rating
 	})
 	for _, c := range resp.Results {
-		if c.PermanentlyClosed || c.Rating < minRating {
-			continue
-		}
-		location := c.Geometry.Location
-		shop := &CoffeeShop{
-			Id:       c.PlaceID,
-			Rating:   c.Rating,
-			Name:     c.Name,
-			IconUrl:  c.Icon,
-			Address:  c.FormattedAddress,
-			Location: &Point{Lat: location.Lat, Lng: location.Lng},
-		}
-		err = s.Send(shop)
-		if err != nil { // log the error, but don't interrupt the flow.
-			log.Println(err)
+		select {
+		case <-ctx.Done():
+			break // Stop transmitting data if context is done/cancelled.
+		default:
+			if c.PermanentlyClosed || c.Rating < minRating {
+				continue
+			}
+			location := c.Geometry.Location
+			shop := &CoffeeShop{
+				Id:       c.PlaceID,
+				Rating:   c.Rating,
+				Name:     c.Name,
+				IconUrl:  c.Icon,
+				Address:  c.FormattedAddress,
+				Location: &Point{Lat: location.Lat, Lng: location.Lng},
+			}
+			err = s.Send(shop)
+			if err != nil {
+				log.Println(err) // log the error, but don't terminate
+			}
 		}
 	}
 	return nil
