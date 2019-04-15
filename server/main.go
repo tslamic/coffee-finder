@@ -8,6 +8,7 @@ import (
 	"googlemaps.github.io/maps"
 	"log"
 	"net"
+	"os"
 )
 
 var (
@@ -17,6 +18,10 @@ var (
 
 func main() {
 	flag.Parse()
+
+	if *apiKey == "" {
+		*apiKey = os.Getenv("MAPS_KEY")
+	}
 
 	if *apiKey == "" {
 		log.Fatal("Google Maps API key required")
